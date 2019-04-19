@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>Advanced CSS 101</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/black.css">
@@ -20,6 +20,21 @@
 			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
 			document.getElementsByTagName( 'head' )[0].appendChild( link );
 		</script>
+		<style>
+			@keyframes orange {
+				to {
+					text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff,
+						0 0 40px #ff5722, 0 0 70px #ff5722, 0 0 80px #ff5722,
+						0 0 100px #ff5722, 0 0 150px #ff5722;
+				}
+				from {
+					filter: brightness(130%);
+					text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff,
+						0 0 20px #ff5722, 0 0 35px #ff5722, 0 0 40px #ff5722,
+						0 0 50px #ff5722, 0 0 75px #ff5722;
+				}
+			}
+		</style>
 	</head>
 	<body>
 		<div class="reveal">
@@ -232,9 +247,12 @@
 					</section>
 					<section>
 						<p>Thanks.</p>
-						<small class="fragment">
+						<small class="fragment" 
+							style="color:white; 
+								animation: orange 1.5s ease-in-out infinite alternate;">
 							纵 CSS 虐我千百遍，我待 CSS 如初恋.
 						</small>
+						
 					</section>
 				</section>
 			</div>
